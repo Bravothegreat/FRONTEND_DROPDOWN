@@ -56,8 +56,8 @@ p, h1, h2, h3, h4, h5, h6 {
 
 header{
  display: flex;
-
- margin: 20px 0 0 120px;
+ 
+ margin: 10px 0 0 120px;
  align-items: center;
  text-align: center;
 
@@ -78,7 +78,7 @@ header{
  }
 
  nav{
-  margin-block-start: -10px;
+  margin-block-start: 3px;
 
  }
 
@@ -149,25 +149,42 @@ header{
 
   section{
     display: flex;
-
-    margin: 160px 0 0 220px;
-    gap: 220px;
+  margin: 90px 0 0 220px;
+    gap: 200px;
   }
 
   section div:nth-of-type(2){
-    margin-block-start: -10px;
+    margin-block-start: 70px;
   }
 
    
 
   .li_button{
     display: flex;
-   gap: 10px;
-    margin-left: 600px;
+   gap: 15px;
+    margin-left: 400px;
+    margin-top: 1px;
+  }
+
+  .button-one{
+    border: none;
+    font-size: 1.2rem;
+    background-color: whitesmoke;
     
   }
 
- .login_link{
+  .button-two{
+    width: 120px;
+    text-align: center;
+    background-color: whitesmoke;
+     font-size: 1.2rem;
+    padding: 10px 0;
+    border-radius: 5px;
+    
+  }
+
+  /*
+   .login_link{
   border: none;
    
  }
@@ -179,15 +196,17 @@ header{
     margin-left: -20px;
     font-size: 1.3rem;
   }
+
+  */
   
 
   #design img{
-    width: 400px;
-   
+    width: 350px;
+    margin-top: 15px;
   }
 
   #design{
-    margin-top: -90px;
+    margin-top: -0;
   }
 
   div #bottom_section{
@@ -195,7 +214,7 @@ header{
     width: 150px;
     height: 20px;
     gap: 45px;
-    margin-block-start: 90px;
+    margin-block-start: 65px;
   }
 
    h2{
@@ -205,7 +224,7 @@ header{
 
    section div p:nth-of-type(1){
     margin-block-start: 40px;
-    margin-block-end: 60px;
+    margin-block-end: 40px;
     line-height: 1.5;
     font-size: 1.2rem;
    }
@@ -251,6 +270,7 @@ header{
   
     body {
       height: 100%;
+     ;
     }
 
     header{
@@ -266,7 +286,7 @@ header{
     section{
       display: flex;
       flex-direction: column;
-      
+       height: 700px;
       width: 375px;
       
       margin: 0 auto;
@@ -313,6 +333,7 @@ header{
            width: 120%;
            height: 120%;
            transition: 0.3s;
+           padding: 30px 0;
          }
 
           
@@ -413,6 +434,55 @@ header{
     color: wheat;
   }
 
+  ul li a:active{
+    color: wheat;
+  }
+
+  ul li a:checked{
+    color: wheat;
+  }
+
+  ul #company:checked ul{
+    margin: 20px 0 0 35px;
+    opacity: 1;
+     display: flex;
+      width: 130px;
+     padding: 0 0 10px 10px;
+  }
+
+
+  
+  ul #features:active ul{
+    margin: 20px 0 0 -10px;
+    opacity: 1;
+     display: flex;
+      width: 130px;
+     padding: 0 0 10px 10px;
+     color: red;
+  }
+
+  .li_button{
+    display: flex;
+   margin-left: 180px;
+    
+   
+  }
+
+  .button-one{
+    border: none;
+    font-size: 1.2rem;
+    background-color: whitesmoke;
+   
+  }
+
+  .button-two{
+    width: 120px;
+    text-align: center;
+    background-color: whitesmoke;
+     font-size: 1.2rem;
+    padding: 12px 0;
+    border-radius: 9px;
+    margin-block-start: 80px;
 
   }
  
