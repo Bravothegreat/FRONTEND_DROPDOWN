@@ -1,0 +1,418 @@
+
+
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+/*
+  2. Remove default margin
+*/
+* {
+  margin: 0;
+}
+/*
+  Typographic tweaks!
+  3. Add accessible line-height
+  4. Improve text rendering
+*/
+body {
+   background-color: var(--clr-bg);
+   overflow-x: hidden;
+   height: 100%;
+   background-color: whitesmoke;
+}
+/*
+  5. Improve media defaults
+*/
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+/*
+  6. Remove built-in form typography styles
+*/
+input, button, textarea, select {
+  font: inherit;
+}
+/*
+  7. Avoid text overflows
+*/
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-work;
+}
+/*
+  8. Create a root stacking context
+*/
+#root, #__next {
+  isolation: isolate;
+}
+
+/* MAIN STYLING */
+:root{
+  --var-clrblack: #333;
+}
+
+header{
+ display: flex;
+
+ margin: 20px 0 0 120px;
+ align-items: center;
+ text-align: center;
+
+}
+
+
+ ul{
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+   gap: 10px;
+ }
+
+
+ ul li{
+  position: relative;
+
+ }
+
+ nav{
+  margin-block-start: -10px;
+
+ }
+
+  li a{
+  padding: 0 20px 0 0;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  padding-top: 13px;
+  font-size: 1.2rem;
+  color: var(--var-clrblack);
+  white-space: nowrap;
+ 
+ 
+ }
+
+ #ul li{
+  display: flex;
+ }
+
+ ul img{
+  width: 18px;
+  height: 18px;
+  margin: 15px 12px 0 0;
+ }
+
+ ul li ul{
+  flex-direction: column;
+  left: -40px;
+  position: absolute;
+   
+  margin-top: 10px;
+  opacity: 0;
+   background-color: #fff;
+   
+ }
+
+  
+
+
+  ul #company:hover ul{
+    margin: 20px 0 0 35px;
+    opacity: 1;
+     display: flex;
+      width: 130px;
+     padding: 0 0 10px 10px;
+  }
+
+
+  
+  ul #features:hover ul{
+    margin: 20px 0 0 -10px;
+    opacity: 1;
+     display: flex;
+      width: 130px;
+     padding: 0 0 10px 10px;
+  }
+
+
+   ul li a:hover{
+    color: wheat;
+  }
+
+  main{
+  width: 1440px;
+ 
+  }
+
+  section{
+    display: flex;
+
+    margin: 160px 0 0 220px;
+    gap: 220px;
+  }
+
+  section div:nth-of-type(2){
+    margin-block-start: -10px;
+  }
+
+   
+
+  .li_button{
+    display: flex;
+   gap: 10px;
+    margin-left: 600px;
+    
+  }
+
+ .login_link{
+  border: none;
+   
+ }
+
+ .register_link{
+  border: 1px solid #000;
+   text-align: center;
+   border-radius: 5px;
+    margin-left: -20px;
+    font-size: 1.3rem;
+  }
+  
+
+  #design img{
+    width: 400px;
+   
+  }
+
+  #design{
+    margin-top: -90px;
+  }
+
+  div #bottom_section{
+    display: flex;
+    width: 150px;
+    height: 20px;
+    gap: 45px;
+    margin-block-start: 90px;
+  }
+
+   h2{
+    font-size: 2.5rem;
+    margin-block-start: 40px;
+   }
+
+   section div p:nth-of-type(1){
+    margin-block-start: 40px;
+    margin-block-end: 60px;
+    line-height: 1.5;
+    font-size: 1.2rem;
+   }
+
+   p a{
+    text-decoration: none;
+    background-color: #000;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 900;
+    text-align: center;
+    padding: 12px;
+    border-radius: 5px;
+    border: 1px solid #000;
+   }
+   
+    .menu_icon {
+      display: none;
+      cursor: pointer;
+    }
+
+     .hamburger{
+      display: block;
+      width: 28px;
+       height: 3px;
+       margin: 5px auto;
+       background-color: #000;
+       -webkit-transition: all 0.3s ease-in-out;
+       transition: all 0.3s ease-in-out;
+     }
+    
+
+    #hide_image {
+      display: none;
+    }
+
+    .hide-p, .hide-h2{
+      display: none;
+    }
+
+
+  @media screen and (min-width:280px) and (max-width:768px) {
+  
+    body {
+      height: 100%;
+    }
+
+    header{
+      width: 375px;
+      margin-block-start: 50px;
+    }
+
+    main{
+      width: 375px;
+      
+    }
+
+    section{
+      display: flex;
+      flex-direction: column;
+      
+      width: 375px;
+      
+      margin: 0 auto;
+      margin-inline-start: 60px;
+    }
+
+    #design{
+      display: none;
+    }
+
+    #hide_image{
+      display: block;
+      width: 400px;
+      height: 400px;
+      margin-block-start: 25px;
+    }
+
+    .menu_icon {
+    display: block;
+       margin: 0 0 1px 210px;
+        }
+
+      .menu_icon.active .hamburger:nth-child(2){
+      opacity: 0;
+      }
+
+      .menu_icon.active .hamburger:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+        }
+
+        
+      .menu_icon.active .hamburger:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+        }
+
+
+         .nav-menu{
+           position: absolute;
+           left: -120%;
+           top: 70px;
+           gap: -90px;
+           flex-direction: column;
+           background-color: #fff;
+           width: 120%;
+           height: 120%;
+           transition: 0.3s;
+         }
+
+          
+
+         .nav-menu.active{
+          left: 0;
+         }
+
+    header h1{
+      margin: 3px 0 15px -60px;
+      font-size: 2.9rem;
+    }
+     
+    .li_button{
+      display: flex;
+      text-align: center;
+  
+      gap: 40px;
+      font-size: 1.2rem;
+      flex-direction: column;
+      background-color: white;
+      width: 100px;
+     margin-left: 150px;
+      
+    }
+
+         
+ .login_link{
+  border: none;
+  margin-top: -80px;
+   
+ }
+
+    ul li ul{
+      flex-direction: column;
+      left: 80px;
+      position: absolute;
+       margin-top: 10px;
+      opacity: 0;
+       background-color: #fff;
+       
+     }
+
+   
+
+    h2{
+    display: none;
+     }
+
+     .hide-h2{
+      display: block;
+      font-size: 2.5rem;
+      margin-block-start: -90px;
+      margin-inline-start: 15px;
+     }
+  
+     section div p:nth-of-type(1){
+      display: none;
+      
+     }
+
+     .hide-p{
+      display: block;
+      line-height: 1.4;
+      margin: 25px 0 0 30px;
+      font-size: 1.2rem;
+      margin-block-end: 60px;
+      
+     }
+
+     p a{
+      text-decoration: none;
+      background-color: #000;
+      color: #fff;
+      font-size: 1rem;
+      font-weight: 900;
+      text-align: center;
+      padding: 12px 25px;
+      border-radius: 5px;
+      border: 1px solid #000;
+      margin-left: 120px;
+     }
+
+     
+  div #bottom_section{
+    display: flex;
+    width: 150px;
+    height: 20px;
+    gap: 18px;
+    margin-block-start: 90px;
+  }
+
+  section div:nth-of-type(2){
+    margin-block-start: -190px;
+  }
+
+  ul li a:hover{
+    color: wheat;
+  }
+
+
+  }
+ 
