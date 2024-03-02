@@ -286,7 +286,7 @@ header{
     section{
       display: flex;
       flex-direction: column;
-       height: 700px;
+     
       width: 375px;
       
       margin: 0 auto;
@@ -397,9 +397,9 @@ header{
 
      .hide-p{
       display: block;
-      line-height: 1.4;
+      line-height: 1.1;
       margin: 25px 0 0 30px;
-      font-size: 1.2rem;
+      font-size: 1.1rem;
       margin-block-end: 60px;
       
      }
@@ -464,6 +464,7 @@ header{
   .li_button{
     display: flex;
    margin-left: 180px;
+    gap: 80px;
     
    
   }
@@ -471,18 +472,19 @@ header{
   .button-one{
     border: none;
     font-size: 1.2rem;
-    background-color: whitesmoke;
+    background-color: white;
    
   }
 
   .button-two{
     width: 120px;
     text-align: center;
-    background-color: whitesmoke;
+    background-color: white;
      font-size: 1.2rem;
     padding: 12px 0;
     border-radius: 9px;
-    margin-block-start: 80px;
+   
 
   }
+}
  
